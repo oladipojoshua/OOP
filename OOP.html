@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        class Country {
+            constructor (cname, capital, population, timeZone) {
+                this.cname=cname,
+                this.capital=capital,
+                this.population=population,
+                this.timeZone=timeZone
+            }
+        }
+
+        let Nigeria = new Country("Nigeria", "Abuja", 213.4, "GMT +1")
+        let England = new Country("England", "London", 59.9, "GMT +0")
+
+
+        // let arr []
+        // arr.push ()
+        // arr.map
+
+        console.log(Nigeria);
+
+        class Coldcountry extends Country {
+            constructor(cname, capital, population, timeZone, temp){
+                super(cname, capital, population, timeZone)
+                this.temp = temp
+            }
+        }
+
+        let canada = new Coldcountry("canada", "ottawa", 32.25, "GMT +5", "4°c")
+        console.log(canada);
+    </script>
+</body>
+</html>

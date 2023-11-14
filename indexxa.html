@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="check()">check</button>
+    <div id="show"></div>
+
+    <script>
+        class Car{
+            constructor (colour,tyre,model,mirror,speed){
+                this.colour= colour
+                this.tyre= tyre
+                this.model= model
+                this.mirror = mirror
+                this.speed = speed
+            }
+            moving(){
+                console.log(`${this.model} is moving`);
+                alert('i will not move')
+                show.innerHTML = `${this.model} is the car and the colour is ${this.colour} and it is ${this.mirror} that is has mirrors, it has ${this.tyre} tyres and the speed is ${this.speed}`
+            }
+        }
+        let one = new Car("red", 4, "nissan 2023", true, '100km/hr')
+        let two = new Car("yellow", 4, "yaris")
+        console.log(one, two);
+
+        // one.moving()
+        // two.moving()
+
+        const check = () =>{
+            one.moving()
+        }
+    </script>
+</body>
+</html>
